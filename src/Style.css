@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+.discover-col {
+  border: 1px solid rgb(187, 186, 186);
+  margin: 2px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.discover-img {
+  height: 180px;
+  transform: rotate(-360deg);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.monthly-deals-header {
+  display: inline;
+  border-bottom: 1px solid #111;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.monthly-deals-img {
+  width: 100%;
+  height: 300px;
 }
-
-.App-link {
-  color: #61dafb;
+.monthly-deals-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.monthly-deals-header-container {
+  margin-bottom: 16px;
 }
