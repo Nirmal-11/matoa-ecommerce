@@ -1,49 +1,56 @@
-import {
-  Button,
-  Container,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { AiOutlineMenu } from "react-icons/ai";
+import { IoIosSearch } from "react-icons/io";
+import { BsPerson, BsHandbag } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [showNav, setShowNav] = useState(false);
+  const handleMenuToggle = () => {
+    setShowNav(!showNav);
+  };
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <FormControl
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <Container>
+      <nav className="main-nav">
+        <div className="main-logo">
+          <img src="../assets/mainlogo.png" alt="" />
+        </div>
+        <AiOutlineMenu
+          size={24}
+          className="menu-icon"
+          onClick={handleMenuToggle}
+        />
+
+        <div className={`${showNav ? "show-main-mobile" : "main-mobile"}`}>
+          <div className="menu-close">
+            <MdClose fill="#fff" size={24} onClick={handleMenuToggle} />
+          </div>
+
+          <div className="main-nav-links">
+            <a href="#">Watches</a>
+            <a href="#">Eyewear</a>
+            <a href="#">Accessories</a>
+            <a href="#">News</a>
+          </div>
+          <div className="main-search-wrapper">
+            <div className="main-search">
+              <IoIosSearch size={25} fill="#534f53" />
+            </div>
+
+            <div className="main-login">
+              <BsPerson size={22} />
+              <p>Log In</p>
+            </div>
+            <div className="main-cart">
+              <span>
+                <BsHandbag size={20} fill="#534f53" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </Container>
   );
 };
 

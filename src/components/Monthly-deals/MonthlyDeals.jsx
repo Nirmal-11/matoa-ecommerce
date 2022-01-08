@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { BsHeart } from "react-icons/bs";
 
 const MonthlyDealsData = [
   {
@@ -38,29 +39,36 @@ const MonthlyDealsData = [
 
 function MonthlyDeals() {
   return (
-    <Container>
+    <Container className="monthly-deals-wrapper">
       <div className="monthly-deals-header-container">
-        <span className="monthly-deals-header">Monthly</span>
-        <span> Deals</span>
+        <span className="monthly-deals-header">Monthly Deals</span>
+        <div className="heading-line"></div>
       </div>
       <Row>
         {MonthlyDealsData.map((item) => {
           return (
-            <Col key={item.id}>
+            <Col key={item.id} className="monthly-deals-content-wrapper">
               <div className="monthly-deals-img">
                 <img src={`../assets/${item.image}.jpg`} alt="" />
               </div>
               <div className="monthly-deals-content">
                 <div>
-                  <h4>{item.name}</h4>
-                  <p>{item.discount}</p>
+                  <h4 className="monthly-deals-item-title">{item.name}</h4>
+                  <span className="monthly-deals-items-discount">
+                    {item.discount}
+                  </span>
                 </div>
-                <div>
-                  <del>{item.prevPrice}</del>
-                  <h4>{item.currentPrice}</h4>
+                <div className="monthly-deals-disount">
+                  <del className="del-price">{item.prevPrice}</del>
+                  <h4 className="current-price">{item.currentPrice}</h4>
                 </div>
-                <div>
-                  <button>Add to cart</button>
+                <div className="add-to-cart">
+                  <div className="wishlist">
+                    <span>
+                      <BsHeart fill="#D84728" size={16} />
+                    </span>
+                  </div>
+                  <button className="add-to-cart-btn">Add to cart</button>
                 </div>
               </div>
             </Col>
