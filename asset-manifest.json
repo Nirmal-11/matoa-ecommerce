@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/matoa/static/css/main.30420b11.css",
+    "main.js": "/matoa/static/js/main.bd064091.js",
+    "index.html": "/matoa/index.html",
+    "main.30420b11.css.map": "/matoa/static/css/main.30420b11.css.map",
+    "main.bd064091.js.map": "/matoa/static/js/main.bd064091.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30420b11.css",
+    "static/js/main.bd064091.js"
+  ]
+}
