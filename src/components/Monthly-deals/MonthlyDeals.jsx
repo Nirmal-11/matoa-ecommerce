@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsHeart } from "react-icons/bs";
+import Discover from "../Discover/Discover";
 
 const MonthlyDealsData = [
   {
@@ -44,10 +45,10 @@ function MonthlyDeals() {
         <span className="monthly-deals-header">Monthly Deals</span>
         <div className="heading-line"></div>
       </div>
-      <Row>
+      <div className="monthly-deals-grid">
         {MonthlyDealsData.map((item) => {
           return (
-            <Col key={item.id} className="monthly-deals-content-wrapper">
+            <div key={item.id} className="monthly-deals-content-wrapper">
               <div className="monthly-deals-img">
                 <img src={`../assets/${item.image}.jpg`} alt="" />
               </div>
@@ -71,10 +72,10 @@ function MonthlyDeals() {
                   <button className="add-to-cart-btn">Add to cart</button>
                 </div>
               </div>
-            </Col>
+            </div>
           );
         })}
-      </Row>
+      </div>
     </Container>
   );
 }

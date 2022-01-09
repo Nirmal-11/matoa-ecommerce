@@ -1,3 +1,126 @@
+@media screen and (max-width: 1200px) {
+  .slider-content .slider-caption-heading {
+    width: 55%;
+  }
+  .recent-news-container .recent-news-contrent-right img {
+    height: 483px;
+    width: 658px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 750px !important;
+  }
+  .slider-content .slider-caption-heading {
+    font-size: 30px;
+    width: 80%;
+  }
+  .carousel-control-prev {
+    left: 91% !important;
+  }
+  .main-mobile {
+    width: 80%;
+  }
+  .main-nav .main-nav-links a {
+    font-size: 13px;
+    padding: 0 0.8rem;
+  }
+  .main-logo img {
+    height: 20px;
+  }
+  .main-nav .main-search-wrapper .main-login p {
+    font-size: 13px;
+  }
+  .slider-content .heading-line {
+    width: 50px;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-desc {
+    font-size: 14px;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-discover {
+    font-size: 14px;
+  }
+  .slider-item-wrapper {
+    height: 450px;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-content {
+    margin-left: 74px;
+  }
+  .discover-col .discover-desc {
+    width: 85%;
+  }
+  .discover-img-wrapper .discover-img {
+    height: 90px;
+  }
+  .monthly-deals-header {
+    font-size: 18px;
+  }
+  .monthly-deals-wrapper .monthly-deals-content-wrapper {
+    margin: 0;
+  }
+  .monthly-deals-grid {
+    grid-template-columns: repeat(auto-fit, minmax(246px, 1fr));
+    grid-gap: 65px;
+  }
+
+  .recent-news-content-wrapper {
+    width: 36%;
+  }
+  .recent-news-content-wrapper {
+    height: 320px;
+  }
+  .featured-product-wrapper {
+    margin-top: 73px;
+  }
+  .react-news-heading .recent-news-header {
+    font-size: 18px;
+  }
+  .featured-product-wrapper .featured-product-heading {
+    font-size: 16px;
+  }
+  .maple-product-content .product-price {
+    font-size: 16px;
+  }
+  .maple-product-content .product-name {
+    font-size: 14px;
+  }
+  .featured-product-wrapper .maple-product-img {
+    width: 40%;
+  }
+  .featured-product-wrapper .maple-product-container .maple-product-content {
+    width: 60%;
+  }
+  .footer-social div .footer-header {
+    width: 80%;
+  }
+  .footer-wrapper p {
+    padding-right: 0;
+  }
+  .partners .partners-logo {
+    grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+  }
+  .slider-img {
+    margin-top: 140px;
+  }
+  .recent-news-content-wrapper .recent-news-content-left h3 {
+    font-size: 23px;
+  }
+  .recent-news-container .recent-news-contrent-right img {
+    height: 322px;
+    width: 500px;
+  }
+  .monthly-deals-img {
+    margin-top: 0;
+  }
+  .monthly-deals-grid {
+    grid-gap: 26px;
+  }
+  .monthly-deals-header-container .heading-line {
+    margin-bottom: 27px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-nav .menu-icon {
     display: block;
@@ -10,7 +133,7 @@
   }
   .show-main-mobile {
     height: 100vh;
-    background: #111;
+    background: #fff;
     position: fixed;
     top: 0;
     right: 0;
@@ -34,13 +157,153 @@
     top: 3%;
     right: 5%;
   }
+  .recent-news-container .recent-news-contrent-right img {
+    height: 310px;
+    width: 358px;
+  }
+  .recent-news-content-wrapper {
+    height: 277px;
+  }
+  .featured-product-wrapper {
+    margin-top: 40px;
+  }
+  .slider-img {
+    height: 300px;
+    margin-left: 6px;
+    margin-top: 165px;
+  }
+  .slider-item-wrapper {
+    height: 400px;
+  }
+  .slider-content .slider-caption-heading {
+    font-size: 24px;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-desc {
+    width: 90%;
+  }
+  .carousel-control-prev {
+    left: 87% !important;
+  }
+  .carousel-control-prev {
+    right: 8% !important;
+  }
+  .recent-news-content-wrapper .recent-news-content-left h3 {
+    font-size: 18px;
+  }
+  .footer-wrapper .footer-title-header {
+    font-size: 16px;
+  }
+  .featured-product-wrapper .maple-product-container .maple-product-content {
+    width: 61%;
+  }
+  .featured-product-wrapper .maple-product-img {
+    width: 39%;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .recent-news-container .recent-news-contrent-right img {
+    height: 277px;
+    width: 300px;
+  }
+  .slider-item-wrapper {
+    height: 600px;
+  }
+  .slider-item-wrapper .slider-content-wrapper {
+    flex-direction: column;
+  }
+  .recent-news-content-wrapper {
+    height: 234px;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-content {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .discover-col {
+    margin-bottom: 30px;
+  }
   .show-main-mobile {
-    width: 80%;
+    width: 100%;
   }
   .main-logo img {
     height: 20px;
+  }
+  .footer-wrapper .footer-col {
+    margin-bottom: 20px;
+  }
+
+  .slider-img {
+    margin-top: 0;
+    height: 250px;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-content {
+    margin-left: 0;
+  }
+  .slider-content .slider-caption-heading {
+    width: 100%;
+  }
+  .slider-item-wrapper .slider-content-wrapper .slider-desc {
+    width: 100%;
+  }
+  .slider-content .slider-caption-heading {
+    font-size: 20px;
+  }
+  .slider-item-wrapper {
+    margin-top: 6px;
+  }
+  .carousel-control-prev {
+    left: 83% !important;
+  }
+  .carousel-control-next {
+    right: 10% !important;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    bottom: -3.5%;
+  }
+  .discover-img-wrapper .discover-img {
+    height: 85px;
+  }
+  .discover-img-wrapper {
+    margin-top: 20px;
+  }
+  .monthly-deals-wrapper {
+    margin-top: 50px;
+  }
+  .footer-wrapper .footer-address,
+  .footer-office-hour {
+    padding-left: 0;
+  }
+  .footer-office-hour {
+    margin-bottom: 26px;
+  }
+  .footer-wrapper .useful-links {
+    padding-left: 0;
+  }
+  .footer-social div {
+    flex-direction: column;
+  }
+  .footer-social div .footer-header {
+    width: 100%;
+  }
+  .maple-series {
+    margin-bottom: 25px;
+  }
+  .recent-news-container .recent-news-contrent-right img {
+    display: none;
+  }
+  .recent-news-content-wrapper {
+    background: antiquewhite;
+    padding: 0 16px;
+    width: 100%;
+  }
+  .featured-product-wrapper .heading-line {
+    margin-bottom: 16px;
+  }
+  .react-news-heading .heading-line {
+    margin-bottom: 16px;
+  }
+  .partners .partners-logo div {
+    text-align: center;
   }
 }

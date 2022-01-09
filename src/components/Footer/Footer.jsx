@@ -10,7 +10,7 @@ function Footer() {
     <div className="footer-wrapper">
       <Container>
         <Row>
-          <Col>
+          <Col className="footer-col">
             <div>
               <img
                 className="footer-logo"
@@ -35,7 +35,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col className="footer-col">
             <div>
               <div>
                 <h4 className="footer-title-header">Get in touch</h4>
@@ -79,7 +79,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col className="footer-col">
             <div className="useful-links">
               <div>
                 <h4 className="footer-title-header">Useful Link</h4>
@@ -96,7 +96,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col className="footer-col">
             <div>
               <div>
                 <h4 className="footer-title-header">Campaign</h4>

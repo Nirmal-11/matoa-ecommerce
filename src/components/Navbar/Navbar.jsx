@@ -24,7 +24,7 @@ const NavBar = () => {
 
         <div className={`${showNav ? "show-main-mobile" : "main-mobile"}`}>
           <div className="menu-close">
-            <MdClose fill="#fff" size={24} onClick={handleMenuToggle} />
+            <MdClose fill="#111" size={24} onClick={handleMenuToggle} />
           </div>
 
           <div className="main-nav-links">

@@ -9,6 +9,7 @@ import RecentNews from "./components/Recent-news/RecentNews";
 import Instagram from "./components/Instagram/Instagram";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
+import Series from "./components/Series/Series";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Discover />
       <MonthlyDeals />
       <RecentNews />
+      <Series />
       <Instagram />
       <Partners />
       <Footer />
